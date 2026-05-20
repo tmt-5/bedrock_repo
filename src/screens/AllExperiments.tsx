@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { HF } from '../tokens';
 import { AppShell, Btn, Chip } from '../components/kit';
 import type { ChainCounts } from '../components/kit';
@@ -188,7 +188,7 @@ function FilterSelect({ value, onChange, placeholder, options }: {
 }) {
   return (
     <div style={{
-      background: HF.card, border: `1px solid ${value ? HF.inkSubtle ?? HF.border : HF.border}`,
+      background: HF.card, border: `1px solid ${value ? HF.ink4 : HF.border}`,
       borderRadius: 8, padding: '0 12px', height: 38, display: 'flex', alignItems: 'center',
       flexShrink: 0,
     }}>
